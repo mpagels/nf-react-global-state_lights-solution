@@ -6,13 +6,7 @@ export default function Light({ light, onToggle }) {
   }
 
   return (
-    <LightButton
-      type="button"
-      onClick={() => {
-        handleToggle();
-      }}
-      isOn={light.isOn}
-    >
+    <LightButton type="button" onClick={handleToggle} isOn={light.isOn}>
       <Icon isOn={light.isOn}>💡</Icon>
       <Text>
         <Name>{light.name}</Name>
